@@ -20,7 +20,7 @@ public class ProcessaLocacao {
             switch(opcao) {
                 case 1:
                     System.out.print("\n");
-                    for (int i = 0; i < 10; i++) {
+                    for (int i = 0; i < carros.length; i++) {
                         System.out.println("Carro " + (i + 1) + " = " + carros[i]);
                     }
                     System.out.print("\n");
@@ -29,7 +29,7 @@ public class ProcessaLocacao {
                     System.out.print("Entre com o numero do carro: ");
                     numeroCarro = input.nextInt();
 
-                    for(int i = 1; i <= 10; i++) {
+                    for(int i = 1; i <= carros.length; i++) {
                         if (numeroCarro == i) {
                             System.out.println("\nVoce escolheu o carro "+numeroCarro+", portanto e o carro = "+carros[i-1]+"\n");
                             break;
